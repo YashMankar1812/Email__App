@@ -15,7 +15,7 @@ router.get('/contact', (req, res) => {
 });
 
 
-router.post('/contact', async (req, res) => {
+router.post('/send-email', async (req, res) => {
     try {
         const { name, email, message } = req.body;
         const subject = `Contact form submission from ${name}`;
